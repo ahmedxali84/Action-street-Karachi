@@ -1,0 +1,178 @@
+@import url('https://fonts.googleapis.com/css2?family=Cabin+Sketch:wght@400;700&family=Syne+Mono&display=swap');
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Syne Mono", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+body{
+    
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100%;
+    width: 100%;
+}
+
+.big-char{
+    /* background-color: wheat; */
+    height: 65vh;
+    display: flex;
+    justify-content:space-between;
+    align-items: end;
+    position: relative;
+}
+
+.vs{
+    /* background-color: aqua; */
+    position: absolute;
+    left: 230px;
+}
+
+.bigCharone{
+    /* background-color: aqua; */
+    height: 100%;
+    width: 40%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.bigCharone img {
+    /* background-color: beige; */
+    height: 100%;
+    width: auto;
+    object-fit: cover;
+}
+
+
+.bigCharone1{
+    /* background-color: aqua; */
+    height: 100%;
+    width: 40%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.bigCharone1 img {
+    /* background-color: beige; */
+    height: 100%;
+    width: auto;
+    object-fit: cover;
+}
+
+.mycontainer {
+    /* background-color: cyan; */
+    display: flex;
+    flex-wrap: wrap;
+    width: 450px; 
+}
+.box {
+    width: 80px;
+    height: 80px;
+    margin: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid rgb(167, 161, 161);
+    background-color: black;
+    overflow: hidden;
+}
+.box img {
+    width: auto;
+    height: 100%;
+    object-fit: cover;
+}
+
+.mycontainer1 {
+    /* background-color: cyan; */
+    display: flex;
+    flex-wrap: wrap;
+    width: 450px;
+}
+
+.my-btn1 {
+    background: #a6753c;
+    color: white;
+    padding: 5px 10px;
+    font-size: 1rem;
+    font-weight: bold;
+    border: none;
+    text-align: center;
+    display: inline-block;
+    text-decoration: none;
+    clip-path: polygon(10% 0%, 90% 0%, 100% 50%, 90% 100%, 10% 100%, 0% 50%);
+    cursor: pointer;
+  }
+
+  .modal {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: rgba(0, 0, 0, 0.8);
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    width: 80%;
+}
+
+.modal-content {
+    background: white;
+    padding: 20px;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.carousel {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+.location-img {
+    width: 150px;
+    cursor: pointer;
+    border: 2px solid transparent;
+    transition: 0.3s;
+}
+
+.location-img:hover {
+    border: 2px solid red;
+}
+
+.close {
+    cursor: pointer;
+    font-size: 40px;
+    color: red;
+}
+
+  
+  
+
+
+  
+  @media only screen and (max-width: 1024px){
+    .vs{
+        position: absolute;
+        left: 150px;
+        top: 150px;
+    }
+    
+  }
+
+  @media (max-width: 768px) {
+    body{
+        display: none;
+    }
+}
+
+  
