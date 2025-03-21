@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="https://cdn.iconscout.com/icon/premium/png-256-thumb/fighting-game-1672806-1419155.png" type="image/x-icon">
+    <title>Document</title>
+    <link rel="stylesheet" href="CSS/boostrap.css" />
+    <link rel="stylesheet" href="CSS/startnow.css" />
+  </head>
+  <body>
+
+
+    <div class="d-flex justify-content-between w-25">
+
+    <audio class="my-btn1" id="backgroundAudio" autoplay loop muted>
+        <source src="Videos/startnowaudio.mp3" type="audio/mp3">
+    </audio>    
+    
+    <button id="toggleButton" class="my-btn1">🔊 Play</button>
+</div>
+
+<div class="container">
+    <div class="row">
+        <div class="col big-char" id="sec3">
+            <div id="bigCharone"  class="bigCharone">
+                <img   class="" src="https://www.fightersgeneration.com/characters/alex-shirtrip.gif" alt="">
+            </div>
+            <div class="vs">
+                <img src="images/vs-.png" alt="">
+            </div>
+
+            <button class="my-btn1" onclick="openLocationSelection()" type="submit" id="slocation">Select Location</button>
+
+            <div id="locationModal" class="modal">
+                <div class="modal-content">
+                    <span class="close" onclick="closeLocationSelection()">&times;</span>
+                    <h2>Select Your Location</h2>
+                    <div class="carousel">
+                        <p>Shah Faisal Colony <br><img class="location-img" src="images/location1.webp" onclick="startGame('location1.webp')"></p>
+                        <p>Malir <br><img class="location-img" src="images/location2.webp" onclick="startGame('location2.webp')"></p>
+                        <p>Green Town <br><img class="location-img" src="images/location3.webp" onclick="startGame('location3.webp')"></p>
+                    </div>
+                </div>
+            </div>
+
+            <div  id="bigCharsec" class="bigCharone1">
+                <img class="" src="https://www.fightersgeneration.com/characters/dio-walkb3.gif" alt="">
+            </div>
+        </div>
+        </div>
+    </div>
+
+
+    <div class="container">
+
+        <div class="row">
+
+            <div class="col-6 d-flex justify-content-start">
+                <div class="mycontainer" id="boxContainer"></div>
+            </div>
+
+            <div class="col-6 d-flex justify-content-end">
+                <div class="mycontainer1" id="boxContainer1"></div>
+            </div>
+
+        </div>
+
+    </div>
+
+    <script src="JS/startnow.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+  </body>
+</html>
